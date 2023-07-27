@@ -1,17 +1,17 @@
 module MyEnumerable
-  def all(&block)
-    each { |item| return false unless block.call(item) }
+  def all?
+    each { |item| return false unless yield item }
     true
   end
 
-  def any(&block)
-    each { |item| return true if block.call(item) }
+  def any?
+    each { |item| return true if yield item }
     false
   end
 
-  def filter(&block)
-    result = []
-    each { |item| result << item if block.call(item) }
-    result
+  def filter
+    filtered_array = []
+    each { |e| filtered_array.push(e) if yield e }
+    filtered_array
   end
 end
