@@ -33,7 +33,7 @@
 <details>
   <summary>Ruby</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Ruby</a></li>
+    <li><a href="https://www.ruby-lang.org/en/">Ruby</a></li>
   </ul>
 </details>
 
